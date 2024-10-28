@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste 🤢</title>
+</head>
+<body style="text-align: center;">
+    <h1>Título do meu site☘</h1>
+    <!-- H1 = título, quanto maior o número menor a fonte. Até 6 --> 
+
+    <p>Parágrafo, aqui se escreve os txt</p>
+    <label for="nome">nome:</label>
+    <input id="nome" type="text" placeholder="Zé da Silva"> <br>
+    <button onclick="boasVindas()">Clique aqui</button><br><br><br>
+    <button onclick="parOuImpar()">Par ou Impar</button><br><br><br>
+    <button onclick="conversao()">Conversão de temperatura</button> <br><br><br>
+    <button onclick="media()">Calcule sua media</button> <br><br><br>
+    <button onclick="pescaria()">Pescaria!</button> <br><br><br>
+    <button onclick="volume()">Volume</button> <br><br><br>
+    <button onclick="diadasemana()">Dia da semana!</button> <br><br><br>
+    <button onclick="pagCalcMed()">Media System</button>
+
+
+    <script>
+        function boasVindas(){
+            let nome = document.getElementById("nome").value;
+            <!--Pegar um elemento no documento e associar na variáver nome-->
+            let ano = prompt("Bem vindo, "+nome+"! Digite seu ano de nascimento")
+            if(2024 - ano > 17){
+                alert("Você é maior de idade pois tens "+(2024-ano)+ " anos")
+            }
+            else{
+                alert("Você é menor de idade pois tens " +(2024-ano)+ " anos")
+            }        
+        }
+        function parOuImpar(){
+            let n = prompt("Escreva um número!");
+            if(n % 2 == 0){
+                alert("É par")
+            }
+            else{
+                alert("É impar")
+            }
+        }
+        function conversao(){
+            let n = prompt("Que conversão deseja fazer? \n 1: Celsius - Fahrenhait \n 2: Fahrenheit - Celsius \n 3: Celsius - Kelvin \n 4:  Kelvin - Celsius \n 5: Fahrenheit - Kelvin \n 6: Kelvin - Fahrenheit")
+            if(n == 1){
+                let t = prompt("Digite a temperatura em Celsius")
+                let r = (t * 1.8) + 32
+                alert("É " +r+ " Fahrenheit")
+            }
+            else if(n == 2){
+                let t = prompt("Digite a temperatura em Fahrenheit")
+                let r = (t-32) * (5/9)
+                alert("É " +r+ " Celsius")
+            }
+            else if(n == 3){
+                let t = prompt("Digite a temperatura em Celsius")
+                let r = parseInt(t) + parseInt(273.15)
+                alert("É " +r+ " Kelvin")
+            }
+            else if(n==4){
+                let t = prompt("Digite a temperatura em Kelvin")
+                let r = parseInt(t) - parseInt(273.15)
+                alert("É " +r+ " Celsius")
+            }
+            else if(n==5){
+                let t = prompt("Digite a temperatura em Fahrenheit")
+                let r = parseInt((t - 32) * (5 / 9)) + parseInt(273.15)
+                alert("É " +r+ " Kelvin")
+            }
+            else if(n==6){
+                let t = Number( prompt("Digite a temperatura em Kelvin"))
+                let r = Number((t -273.15) * (9/5) + 32)
+                alert("É " +r+ " Fahrenheit")
+            }
+            else if(n >= 7)(
+                alert("Opção errada, saindo do sistema")
+            )
+            
+        }
+        function media(){
+            let n1 = Number(prompt("Digite sua NOTA 1"))
+            let n2 = Number(prompt("Digite sua NOTA 2"))
+            let m = (n1 + n2) / 2
+            alert("Sua média é " +m)
+        }
+
+        function pescaria(){
+            let pp = prompt("Digite o peso permitido")
+            let qp = prompt("Digite o peso pescado")
+            let mp = prompt("Digite a multa por excesso")
+            if(qp>pp){
+                dif = qp - pp
+                multa = dif * mp
+                alert("O peso excedeu em " +dif+ " KG, portanto a multa será de R$ " +multa)
+            }
+            else{
+                alert("O peso está dentro do limite planejado, portanto não há multa")
+            }
+        }
+
+        function volume(){
+            let altura = Number(prompt("Digite a altura"));
+            let comprimento = Number(prompt("digite o comprimento"));
+            let largura = Number(prompt("digite a largura"));
+            let volume = altura * comprimento * largura
+            alert("O Volume do móvel é " +volume)
+        }
+
+        function diadasemana(){
+            let n = prompt("Digite um número de 1 a 7")
+            if(n==1){
+                alert("Escolheu segunda-feira")
+            }
+            if(n==2){
+                alert("Escolheu terça-feira")
+            }
+            if(n==3){
+                alert("Escolheu quarta-feira")
+            }
+            if(n==4){
+                alert("Escolheu quinta-feira")
+            }
+            if(n==6){
+                alert("Escolheu sexta-feira")
+            }
+            if(n==7){
+                alert("Escolheu sabado-feira")
+            }
+        }
+
+        function pagCalcMed(){
+            window.location.href = "mediasystem.html";
+        }
+
+        
+
+        
+    </script>
+</body>
+</html>

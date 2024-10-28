@@ -1,0 +1,38 @@
+.container{
+    border-style: double;
+    text-align: center;
+    width: 70pw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+.register{
+    text-align: center;
+    border-style: dashed;
+    width: 45vw;
+    background-color: lightslategray;
+    border-radius: 15px;
+}
+.login{
+    border: dashed;
+    width: 45vw;
+    background-color: lightslategray;
+    border-radius: 15px;
+
+}
+
+#adicionar{
+    width: 100%;
+    border-radius: 15pw;
+}
+#logar{
+    width: 100px;
+    border-radius: 15pw;
+
+}
+imput{
+    width: 200px;
+    height: 20px;
+}
