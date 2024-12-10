@@ -1,0 +1,59 @@
+#fundo{
+    background-image: url(IMAGENS/pexels-janetrangdoan-1092730.jpg);  /* Define a imagem de fundo para o elemento */
+    background-repeat: no-repeat;  /* Define a repetição da imagem de fundo */
+    background-size: cover;   /* Define o tamanho da imagem de fundo para cobrir todo o elemento */
+    justify-content: center;   /* Define a justificação do conteúdo dentro do elemento */
+    filter: blur(9px);   /* Aplica um efeito de desfoque à imagem de fundo */
+    position: absolute;   /* Define a posição do objeto ONDE VC QUISER!!!! */
+    top: 50%;   /* Define a posição do elemento no centro da página */
+    left: 50%;
+      transform: translate(-50%, -50%);   /* Transforma a posição do elemento para que ele fique no centro da página */
+      width: 100%;   /* Define a largura e altura do elemento para que ele ocupe todo o espaço disponível */
+      height: 100%;
+      z-index: -1;   /* Define a ordem de empilhamento do elemento para que ele fique atrás do conteúdo */
+  }
+  #botao2pag{
+    text-align: center;
+    border: radius 50px;
+    font-size: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: rgb(255, 255, 255);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 11px rgb(0, 0, 0);
+  }
+  #resultado2{
+    position: absolute;
+  }  
+  table {
+    width: 100%;
+    border-collapse: collapse; /* Remove espaços entre as células */
+}
+  td {
+    border: 1px solid #ddd; /* Define borda */
+    padding: 8px; /* Espaçamento interno */
+    text-align: left; /* Alinhamento do texto */
+}
+/* EXEMPLO */
+.caixa-info1,
+.caixa-info2,
+.caixa-info3 {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  background-color: #ffffff;
+  font-size: 19px;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 2px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.textoCentral{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color:#000000;
+  align-items: center;
+  text-align: center;
+  font-size: 25px;
+}
